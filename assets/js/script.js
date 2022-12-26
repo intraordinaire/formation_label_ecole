@@ -11,10 +11,5 @@ document.addEventListener("click", function (event) {
     return;
   }
 
-  var accordions = document.querySelectorAll("ul");
-  for (var i = 0; i < accordions.length; i++) {
-    accordions[i].classList.remove("active");
-  }
-
   content.classList.toggle("active");
 });
