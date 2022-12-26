@@ -1,0 +1,59 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+h2 {
+  margin-bottom: 0;
+}
+h2 a {
+  display: inline-block;
+  width: 800px;
+  color: black;
+  text-decoration: none;
+  background-color: #dedede;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+h2:hover a {
+  background-color: #f2f2f2;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+body > ul {
+  display: none;
+  width: 784px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2) inset;
+  overflow-x: hidden;
+  margin-top: -1px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 15px;
+  margin-left: 3px;
+}
+body > ul li::marker {
+  content: "🔗 ";
+}
+body > ul li.download::marker {
+  content: "💾 ";
+}
+body > ul li.game::marker {
+  content: "🎮 ";
+}
+ul.active {
+  display: block;
+}
+li {
+  margin-top: 1rem;
+}
+
+li a {
+    color: indianred;
+}
+li a:visited {
+    color: lightcoral;
+}
+li a:hover {
+    color: white;
+    background-color: indianred;
+}
