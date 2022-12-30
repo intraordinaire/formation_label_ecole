@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/todo.css" />
-    <script type="application/javascript" src="assets/js/todo.js"></script>
+    <script type="application/javascript" src="assets/js/todo.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -21,7 +21,7 @@
           />
         </form>
       </header>
-      <ul class="list-group todos mx-auto text-light">
+      <ul class="list-group todos mx-auto text-light" id="todos-list">
         <li class="list-group-item d-flex justify-content-between align-items-center">
           <span>Manger une pizza</span>
           <i class="far fa-trash-alt delete"></i>
