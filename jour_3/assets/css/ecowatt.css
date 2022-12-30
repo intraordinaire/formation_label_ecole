@@ -1,0 +1,10 @@
+.progress {
+    height: 30px;
+}
+.progress-bar {
+    border-right: 1px dashed white;
+    width: 4.2%;
+}
+.progress-bar:last-child {
+    border-right: none;
+}
