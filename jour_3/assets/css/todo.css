@@ -29,3 +29,9 @@ label.add {
 .filtred {
   display: none !important;
 }
+
+header > span {
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}

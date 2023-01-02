@@ -60,14 +60,25 @@
       </footer>
     </div>
     <script type="application/javascript">
+        // Définition de la variable nbClick
         var nbClick = 0;
-        document.querySelector('#my-link').addEventListener('click', function (event) {
-            nbClick++;
-            event.stopPropagation();
 
+        // On sélectionne l'élément #my-link dans la page, et on lui ajoute un écouteur sur un évènement
+        document.querySelector('#my-link').addEventListener('click', function (event) {
+            // On incrémente la variable, cette ligne est équivalente à : nbClick = nbClick + 1;
+            nbClick++;
+            // L'objet évènement nous permet d'appeler quelques méthodes dessus : 
+            // .stopPropagation arrête l'évènement et l'empêche de se propager aux autres "écouteurs"
+            // .preventDefault empêche l'action par défaut de l'évènement
+            event.stopPropagation();
+            event.preventDefault();
+
+            // Si, ma variable nbClick est égale à trois
             if (nbClick === 3) {
+                // J'affiche ce message en tant qu'alerte
                 alert('Déjà la troisième fois que tu me cliques dessus !')
             } else {
+                // Sinon, donc dans tous les autres cas, j'affiche ce message dans la console
                 console.log(`Lien cliqué ${nbClick} fois !`);
             }
         });
