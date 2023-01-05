@@ -119,7 +119,7 @@ document.querySelector("#search-todo-value").addEventListener("keyup", function(
 })
 
 // SECONDE PARTIE DU BONUS
-// => Au clic sur ce "Effacer la recherche", effacer la recherche, et ré-afficher toute la liste
+// => Au clic sur "Effacer la recherche", vider le champs de recherche, et ré-afficher toute la liste
 
 // On sélectionne l'élément #clear-search, et on lui ajoute un écouteur d'évènement pour le "click"
 document.querySelector("#clear-search").addEventListener("click", function() {
